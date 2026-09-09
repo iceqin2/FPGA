@@ -1,0 +1,776 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a75tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Device 21-403] Loading part xc7a75tfgg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10792 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 880.008 ; gain = 235.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/top.v:5]
+INFO: [Synth 8-6157] synthesizing module 'max30102_driver' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/max30102_driver.v:3]
+	Parameter REG_INTR_STATUS_1 bound to: 16'b0000000000000000 
+	Parameter REG_INTR_STATUS_2 bound to: 16'b0000000000000001 
+	Parameter REG_INTR_ENABLE_1 bound to: 16'b0000000000000010 
+	Parameter REG_INTR_ENABLE_2 bound to: 16'b0000000000000011 
+	Parameter REG_FIFO_WR_PTR bound to: 16'b0000000000000100 
+	Parameter REG_OVF_COUNTER bound to: 16'b0000000000000101 
+	Parameter REG_FIFO_RD_PTR bound to: 16'b0000000000000110 
+	Parameter REG_FIFO_DATA bound to: 16'b0000000000000111 
+	Parameter REG_FIFO_CONFIG bound to: 16'b0000000000001000 
+	Parameter REG_MODE_CONFIG bound to: 16'b0000000000001001 
+	Parameter REG_SPO2_CONFIG bound to: 16'b0000000000001010 
+	Parameter REG_LED1_PA bound to: 16'b0000000000001100 
+	Parameter REG_LED2_PA bound to: 16'b0000000000001101 
+	Parameter REG_PILOT_PA bound to: 16'b0000000000010000 
+	Parameter REG_MULTI_LED_CTRL1 bound to: 16'b0000000000010001 
+	Parameter REG_MULTI_LED_CTRL2 bound to: 16'b0000000000010010 
+	Parameter REG_TEMP_INTR bound to: 16'b0000000000011111 
+	Parameter REG_TEMP_FRAC bound to: 16'b0000000000100000 
+	Parameter REG_TEMP_CONFIG bound to: 16'b0000000000100001 
+	Parameter REG_PROX_INT_THRESH bound to: 16'b0000000000110000 
+	Parameter REG_REV_ID bound to: 16'b0000000011111110 
+	Parameter REG_PART_ID bound to: 16'b0000000011111111 
+	Parameter IDLE bound to: 8'b00000000 
+	Parameter WR_RST bound to: 8'b00000001 
+	Parameter WR_RST_WAIT bound to: 8'b00000010 
+	Parameter WR_INTR_1 bound to: 8'b00000011 
+	Parameter WR_INTR_1_WAIT bound to: 8'b00000100 
+	Parameter WR_INTR_2 bound to: 8'b00000101 
+	Parameter WR_INTR_2_WAIT bound to: 8'b00000110 
+	Parameter WR_FIFO_WR bound to: 8'b00000111 
+	Parameter WR_FIFO_WR_WAIT bound to: 8'b00001000 
+	Parameter WR_OVF_COUNTER bound to: 8'b00001001 
+	Parameter WR_OVF_COUNTER_WAIT bound to: 8'b00001010 
+	Parameter WR_FIFO_RD bound to: 8'b00001011 
+	Parameter WR_FIFO_RD_WAIT bound to: 8'b00001100 
+	Parameter WR_FIFO_CONFIG bound to: 8'b00001101 
+	Parameter WR_FIFO_CONFIG_WAIT bound to: 8'b00001110 
+	Parameter WR_MODE_CONFIG bound to: 8'b00001111 
+	Parameter WR_MODE_CONFIG_WAIT bound to: 8'b00010000 
+	Parameter WR_SPO2_CONFIG bound to: 8'b00010001 
+	Parameter WR_SPO2_CONFIG_WAIT bound to: 8'b00010010 
+	Parameter WR_LED1_PA bound to: 8'b00010011 
+	Parameter WR_LED1_PA_WAIT bound to: 8'b00010100 
+	Parameter WR_LED2_PA bound to: 8'b00010101 
+	Parameter WR_LED2_PA_WAIT bound to: 8'b00010110 
+	Parameter INTR_WAIT bound to: 8'b00010111 
+	Parameter WR_RD_XT1 bound to: 8'b00011000 
+	Parameter WR_RD_XT1_WAIT bound to: 8'b00011001 
+	Parameter WR_RD_XT2 bound to: 8'b00011010 
+	Parameter WR_RD_XT2_WAIT bound to: 8'b00011011 
+	Parameter WR_RD_X1 bound to: 8'b00011100 
+	Parameter WR_RD_X1_WAIT bound to: 8'b00011101 
+	Parameter WR_RD_X2 bound to: 8'b00011110 
+	Parameter WR_RD_X2_WAIT bound to: 8'b00011111 
+	Parameter WR_RD_X3 bound to: 8'b00100000 
+	Parameter WR_RD_X3_WAIT bound to: 8'b00100001 
+	Parameter WR_RD_X4 bound to: 8'b00100010 
+	Parameter WR_RD_X4_WAIT bound to: 8'b00100011 
+	Parameter WR_RD_X5 bound to: 8'b00100100 
+	Parameter WR_RD_X5_WAIT bound to: 8'b00100101 
+	Parameter WR_RD_X6 bound to: 8'b00100110 
+	Parameter WR_RD_X6_WAIT bound to: 8'b00100111 
+	Parameter END_WAIT bound to: 8'b00101000 
+WARNING: [Synth 8-6014] Unused sequential element INIT_X1_reg was removed.  [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/max30102_driver.v:485]
+WARNING: [Synth 8-6014] Unused sequential element INIT_X2_reg was removed.  [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/max30102_driver.v:498]
+INFO: [Synth 8-6155] done synthesizing module 'max30102_driver' (1#1) [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/max30102_driver.v:3]
+WARNING: [Synth 8-689] width (18) of port connection 'o_red_dat' does not match port width (24) of module 'max30102_driver' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/top.v:75]
+WARNING: [Synth 8-689] width (18) of port connection 'o_ir_dat' does not match port width (24) of module 'max30102_driver' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/top.v:76]
+INFO: [Synth 8-6157] synthesizing module 'iic_phy' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/iic_phy.v:5]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter I2C_FREQ bound to: 250000 - type: integer 
+	Parameter CLK_DIV bound to: 50 - type: integer 
+	Parameter IDLE bound to: 8'b00000000 
+	Parameter SEND_SLAVE_ADDR bound to: 8'b00000001 
+	Parameter SEND_ADDR_HIGH bound to: 8'b00000010 
+	Parameter SEND_ADDR_LOW bound to: 8'b00000011 
+	Parameter SEND_DATA bound to: 8'b00000100 
+	Parameter END bound to: 8'b00000101 
+	Parameter SEND_READ_START bound to: 8'b00000110 
+	Parameter READ_DATA bound to: 8'b00000111 
+	Parameter READ_DATA_6BYTES bound to: 8'b00001000 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/iic_phy.v:204]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/iic_phy.v:252]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/iic_phy.v:301]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/iic_phy.v:350]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/iic_phy.v:399]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/iic_phy.v:414]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/iic_phy.v:467]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/iic_phy.v:521]
+INFO: [Synth 8-6155] done synthesizing module 'iic_phy' (2#1) [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/iic_phy.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ana_show' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sum' [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/sum_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sum' (3#1) [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/sum_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'float_tf' [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/float_tf_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'float_tf' (4#1) [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/float_tf_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'm_axis_result_tvalid' does not match port width (1) of module 'float_tf' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:209]
+WARNING: [Synth 8-689] width (32) of port connection 'm_axis_result_tvalid' does not match port width (1) of module 'float_tf' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:219]
+WARNING: [Synth 8-689] width (32) of port connection 'm_axis_result_tvalid' does not match port width (1) of module 'float_tf' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:229]
+WARNING: [Synth 8-689] width (32) of port connection 'm_axis_result_tvalid' does not match port width (1) of module 'float_tf' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:239]
+INFO: [Synth 8-6157] synthesizing module 'floating_mult' [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/floating_mult_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_mult' (5#1) [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/floating_mult_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 's_axis_a_tvalid' does not match port width (1) of module 'floating_mult' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:246]
+WARNING: [Synth 8-689] width (32) of port connection 's_axis_b_tvalid' does not match port width (1) of module 'floating_mult' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:249]
+WARNING: [Synth 8-689] width (32) of port connection 's_axis_a_tvalid' does not match port width (1) of module 'floating_mult' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:259]
+WARNING: [Synth 8-689] width (32) of port connection 's_axis_b_tvalid' does not match port width (1) of module 'floating_mult' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:262]
+INFO: [Synth 8-6157] synthesizing module 'floating_div' [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/floating_div_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_div' (6#1) [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/floating_div_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_add' [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/floating_add_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_add' (7#1) [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/floating_add_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_0' [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/floating_point_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_0' (8#1) [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/floating_point_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:367]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (9#1) [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (162) of port connection 'probe0' does not match port width (128) of module 'ila_0' [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:371]
+WARNING: [Synth 8-324] index 32 out of range [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:392]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'floating_point_0x'. This will prevent further optimization [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:355]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:367]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'floating_add2'. This will prevent further optimization [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:342]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'float_tf3'. This will prevent further optimization [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:224]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'float_tf4'. This will prevent further optimization [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:234]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'float_tf1'. This will prevent further optimization [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:204]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'float_tf2'. This will prevent further optimization [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:214]
+INFO: [Synth 8-6155] done synthesizing module 'ana_show' (10#1) [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/ana_show.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (11#1) [D:/vivado2/max30102x3/prj/prj.srcs/sources_1/new/top.v:5]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port clk_50
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[7]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[6]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[5]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[4]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[3]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[2]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[1]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 956.094 ; gain = 311.734
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 956.094 ; gain = 311.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 956.094 ; gain = 311.734
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 956.094 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/ila_0/ila_0/ila_0_in_context.xdc] for cell 'xxana_show/your_instance_name'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/ila_0/ila_0/ila_0_in_context.xdc] for cell 'xxana_show/your_instance_name'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_point_0/floating_point_0/floating_point_0_in_context.xdc] for cell 'xxana_show/floating_point_0x'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_point_0/floating_point_0/floating_point_0_in_context.xdc] for cell 'xxana_show/floating_point_0x'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_div/floating_div/floating_div_in_context.xdc] for cell 'xxana_show/floating_div1'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_div/floating_div/floating_div_in_context.xdc] for cell 'xxana_show/floating_div1'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_add/floating_add/floating_add_in_context.xdc] for cell 'xxana_show/floating_add1'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_add/floating_add/floating_add_in_context.xdc] for cell 'xxana_show/floating_add1'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_add/floating_add/floating_add_in_context.xdc] for cell 'xxana_show/floating_add2'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_add/floating_add/floating_add_in_context.xdc] for cell 'xxana_show/floating_add2'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_mult/floating_mult/floating_mult_in_context.xdc] for cell 'xxana_show/floating_mult1'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_mult/floating_mult/floating_mult_in_context.xdc] for cell 'xxana_show/floating_mult1'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_mult/floating_mult/floating_mult_in_context.xdc] for cell 'xxana_show/floating_mult2'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_mult/floating_mult/floating_mult_in_context.xdc] for cell 'xxana_show/floating_mult2'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_mult/floating_mult/floating_mult_in_context.xdc] for cell 'xxana_show/floating_multf'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_mult/floating_mult/floating_mult_in_context.xdc] for cell 'xxana_show/floating_multf'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_mult/floating_mult/floating_mult_in_context.xdc] for cell 'xxana_show/floating_multR2c'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_mult/floating_mult/floating_mult_in_context.xdc] for cell 'xxana_show/floating_multR2c'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_mult/floating_mult/floating_mult_in_context.xdc] for cell 'xxana_show/floating_multR1c'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/floating_mult/floating_mult/floating_mult_in_context.xdc] for cell 'xxana_show/floating_multR1c'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/sum/sum/sum_in_context.xdc] for cell 'xxana_show/x1'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/sum/sum/sum_in_context.xdc] for cell 'xxana_show/x1'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/sum/sum/sum_in_context.xdc] for cell 'xxana_show/x2'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/sum/sum/sum_in_context.xdc] for cell 'xxana_show/x2'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/float_tf/float_tf/float_tf_in_context.xdc] for cell 'xxana_show/float_tf1'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/float_tf/float_tf/float_tf_in_context.xdc] for cell 'xxana_show/float_tf1'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/float_tf/float_tf/float_tf_in_context.xdc] for cell 'xxana_show/float_tf2'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/float_tf/float_tf/float_tf_in_context.xdc] for cell 'xxana_show/float_tf2'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/float_tf/float_tf/float_tf_in_context.xdc] for cell 'xxana_show/float_tf3'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/float_tf/float_tf/float_tf_in_context.xdc] for cell 'xxana_show/float_tf3'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/float_tf/float_tf/float_tf_in_context.xdc] for cell 'xxana_show/float_tf4'
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.runs/synth_1/.Xil/Vivado-464-pioneer/float_tf/float_tf/float_tf_in_context.xdc] for cell 'xxana_show/float_tf4'
+Parsing XDC File [D:/vivado2/max30102x3/prj/prj.srcs/constrs_1/new/led.xdc]
+Finished Parsing XDC File [D:/vivado2/max30102x3/prj/prj.srcs/constrs_1/new/led.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado2/max30102x3/prj/prj.srcs/constrs_1/new/led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1056.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1056.043 ; gain = 411.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1056.043 ; gain = 411.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for xxana_show/your_instance_name. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/floating_point_0x. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/floating_div1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/floating_add1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/floating_add2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/floating_mult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/floating_mult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/floating_multR1c. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/floating_multR2c. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/floating_multf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/x1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/x2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/float_tf1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/float_tf2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/float_tf3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xxana_show/float_tf4. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1056.043 ; gain = 411.684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'max30102_driver'
+INFO: [Synth 8-5546] ROM "iic_rd_wr_opt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_wr_dat" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "end_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'iic_phy'
+INFO: [Synth 8-5546] ROM "step_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "step_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "step_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "step_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "step_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "user_rw_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "user_rw_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "user_rw_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "user_rw_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "user_rw_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sda_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sda_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sda_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sda_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_rd_dat" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_rd_dat_6B" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00000 |                         00000000
+                  WR_RST |                            00001 |                         00000001
+             WR_RST_WAIT |                            00010 |                         00000010
+               WR_INTR_1 |                            00011 |                         00000011
+          WR_INTR_1_WAIT |                            00100 |                         00000100
+               WR_INTR_2 |                            00101 |                         00000101
+          WR_INTR_2_WAIT |                            00110 |                         00000110
+              WR_FIFO_WR |                            00111 |                         00000111
+         WR_FIFO_WR_WAIT |                            01000 |                         00001000
+          WR_OVF_COUNTER |                            01001 |                         00001001
+     WR_OVF_COUNTER_WAIT |                            01010 |                         00001010
+              WR_FIFO_RD |                            01011 |                         00001011
+         WR_FIFO_RD_WAIT |                            01100 |                         00001100
+          WR_FIFO_CONFIG |                            01101 |                         00001101
+     WR_FIFO_CONFIG_WAIT |                            01110 |                         00001110
+          WR_MODE_CONFIG |                            01111 |                         00001111
+     WR_MODE_CONFIG_WAIT |                            10000 |                         00010000
+          WR_SPO2_CONFIG |                            10001 |                         00010001
+     WR_SPO2_CONFIG_WAIT |                            10010 |                         00010010
+              WR_LED1_PA |                            10011 |                         00010011
+         WR_LED1_PA_WAIT |                            10100 |                         00010100
+              WR_LED2_PA |                            10101 |                         00010101
+         WR_LED2_PA_WAIT |                            10110 |                         00010110
+               INTR_WAIT |                            10111 |                         00010111
+               WR_RD_XT1 |                            11000 |                         00011000
+          WR_RD_XT1_WAIT |                            11001 |                         00011001
+               WR_RD_XT2 |                            11010 |                         00011010
+          WR_RD_XT2_WAIT |                            11011 |                         00011011
+                WR_RD_X1 |                            11100 |                         00011100
+           WR_RD_X1_WAIT |                            11101 |                         00011101
+                END_WAIT |                            11110 |                         00101000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'max30102_driver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                        000000001 |                         00000000
+         SEND_SLAVE_ADDR |                        000000010 |                         00000001
+          SEND_ADDR_HIGH |                        000000100 |                         00000010
+           SEND_ADDR_LOW |                        000001000 |                         00000011
+         SEND_READ_START |                        000010000 |                         00000110
+        READ_DATA_6BYTES |                        000100000 |                         00001000
+               READ_DATA |                        001000000 |                         00000111
+               SEND_DATA |                        010000000 |                         00000100
+                     END |                        100000000 |                         00000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'iic_phy'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1056.043 ; gain = 411.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 4     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 6     
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	 121 Input     48 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   9 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 4     
+	   3 Input     16 Bit        Muxes := 1     
+	  31 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 6     
+	  29 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	  33 Input     16 Bit        Muxes := 1     
+	  21 Input     16 Bit        Muxes := 1     
+	 121 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 12    
+	   7 Input      8 Bit        Muxes := 1     
+	  21 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 7     
+	  31 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 20    
+	  31 Input      5 Bit        Muxes := 1     
+	  41 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	  41 Input      3 Bit        Muxes := 1     
+	  41 Input      2 Bit        Muxes := 1     
+	 121 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 44    
+	  41 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 5     
+	  31 Input      1 Bit        Muxes := 8     
+	  29 Input      1 Bit        Muxes := 7     
+	  33 Input      1 Bit        Muxes := 7     
+	  21 Input      1 Bit        Muxes := 4     
+	 121 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+Module max30102_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 7     
+	  31 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 20    
+	  31 Input      5 Bit        Muxes := 1     
+	  41 Input      4 Bit        Muxes := 1     
+	  41 Input      3 Bit        Muxes := 1     
+	  41 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  41 Input      1 Bit        Muxes := 3     
+Module iic_phy 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	 121 Input     48 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   9 Input     48 Bit        Muxes := 1     
+	  31 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 6     
+	  29 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	  33 Input     16 Bit        Muxes := 1     
+	  21 Input     16 Bit        Muxes := 1     
+	 121 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 12    
+	  21 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	 121 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 34    
+	   6 Input      1 Bit        Muxes := 5     
+	  31 Input      1 Bit        Muxes := 8     
+	  29 Input      1 Bit        Muxes := 7     
+	  33 Input      1 Bit        Muxes := 7     
+	  21 Input      1 Bit        Muxes := 4     
+	 121 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 11    
+Module ana_show 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 6     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "iic_rd_dat_6B" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_rd_dat" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sda_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "user_rw_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "step_done" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port clk_50
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[7]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[6]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[5]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[4]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[3]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[2]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[1]
+WARNING: [Synth 8-3331] design max30102_driver has unconnected port iic_rd_dat[0]
+INFO: [Synth 8-3886] merging instance 'xxana_show/max_red_dat_reg[18]' (FDCE) to 'xxana_show/max_red_dat_reg[19]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/min_red_dat_reg[18]' (FDPE) to 'xxana_show/min_red_dat_reg[19]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/max_red_dat_reg[19]' (FDCE) to 'xxana_show/max_red_dat_reg[20]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/min_red_dat_reg[19]' (FDPE) to 'xxana_show/min_red_dat_reg[20]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/max_red_dat_reg[20]' (FDCE) to 'xxana_show/max_red_dat_reg[21]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/min_red_dat_reg[20]' (FDPE) to 'xxana_show/min_red_dat_reg[21]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/max_red_dat_reg[21]' (FDCE) to 'xxana_show/max_red_dat_reg[22]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/min_red_dat_reg[21]' (FDPE) to 'xxana_show/min_red_dat_reg[22]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/max_red_dat_reg[22]' (FDCE) to 'xxana_show/max_red_dat_reg[23]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/min_red_dat_reg[22]' (FDPE) to 'xxana_show/min_red_dat_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xxana_show/\max_red_dat_reg[23] )
+INFO: [Synth 8-3886] merging instance 'xxana_show/max_ir_dat_reg[18]' (FDCE) to 'xxana_show/max_ir_dat_reg[19]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/min_ir_dat_reg[18]' (FDPE) to 'xxana_show/min_ir_dat_reg[19]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/max_ir_dat_reg[19]' (FDCE) to 'xxana_show/max_ir_dat_reg[20]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/min_ir_dat_reg[19]' (FDPE) to 'xxana_show/min_ir_dat_reg[20]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/max_ir_dat_reg[20]' (FDCE) to 'xxana_show/max_ir_dat_reg[21]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/min_ir_dat_reg[20]' (FDPE) to 'xxana_show/min_ir_dat_reg[21]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/max_ir_dat_reg[21]' (FDCE) to 'xxana_show/max_ir_dat_reg[22]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/min_ir_dat_reg[21]' (FDPE) to 'xxana_show/min_ir_dat_reg[22]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/max_ir_dat_reg[22]' (FDCE) to 'xxana_show/max_ir_dat_reg[23]'
+INFO: [Synth 8-3886] merging instance 'xxana_show/min_ir_dat_reg[22]' (FDPE) to 'xxana_show/min_ir_dat_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xxana_show/\max_ir_dat_reg[23] )
+INFO: [Synth 8-3886] merging instance 'nolabel_line56/iic_addr_reg[4]' (FDC) to 'nolabel_line56/iic_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line56/iic_addr_reg[5]' (FDC) to 'nolabel_line56/iic_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line56/iic_addr_reg[6]' (FDC) to 'nolabel_line56/iic_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line56/iic_addr_reg[7]' (FDC) to 'nolabel_line56/iic_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line56/iic_addr_reg[8]' (FDC) to 'nolabel_line56/iic_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line56/iic_addr_reg[9]' (FDC) to 'nolabel_line56/iic_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line56/iic_addr_reg[10]' (FDC) to 'nolabel_line56/iic_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line56/iic_addr_reg[11]' (FDC) to 'nolabel_line56/iic_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line56/iic_addr_reg[12]' (FDC) to 'nolabel_line56/iic_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line56/iic_addr_reg[13]' (FDC) to 'nolabel_line56/iic_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line56/iic_addr_reg[14]' (FDC) to 'nolabel_line56/iic_addr_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line56/iic_addr_reg[15] )
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_16b_8b_opt_reg' (FDCE) to 'u_iic_phy/user_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[4]' (FDCE) to 'u_iic_phy/user_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[5]' (FDCE) to 'u_iic_phy/user_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[6]' (FDCE) to 'u_iic_phy/user_addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[7]' (FDCE) to 'u_iic_phy/user_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[8]' (FDCE) to 'u_iic_phy/user_addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[9]' (FDCE) to 'u_iic_phy/user_addr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[10]' (FDCE) to 'u_iic_phy/user_addr_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[11]' (FDCE) to 'u_iic_phy/user_addr_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[12]' (FDCE) to 'u_iic_phy/user_addr_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[13]' (FDCE) to 'u_iic_phy/user_addr_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[14]' (FDCE) to 'u_iic_phy/user_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_addr_reg[15]' (FDCE) to 'u_iic_phy/user_slave_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_slave_addr_reg[0]' (FDCE) to 'u_iic_phy/user_slave_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_slave_addr_reg[4]' (FDCE) to 'u_iic_phy/user_slave_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_slave_addr_reg[2]' (FDCE) to 'u_iic_phy/user_slave_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_slave_addr_reg[6]' (FDCE) to 'u_iic_phy/user_slave_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_iic_phy/user_slave_addr_reg[5]' (FDCE) to 'u_iic_phy/user_slave_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_iic_phy/user_slave_addr_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (u_iic_phy/FSM_onehot_state_reg[2]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1056.043 ; gain = 411.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------+-----------------+---------------+----------------+
+|Module Name     | RTL Object      | Depth x Width | Implemented As | 
++----------------+-----------------+---------------+----------------+
+|max30102_driver | iic_start       | 256x1         | LUT            | 
+|max30102_driver | iic_1Byte_6Byte | 256x1         | LUT            | 
+|max30102_driver | iic_start       | 256x1         | LUT            | 
+|max30102_driver | iic_1Byte_6Byte | 256x1         | LUT            | 
++----------------+-----------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1056.043 ; gain = 411.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1056.043 ; gain = 411.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1074.852 ; gain = 430.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1080.855 ; gain = 436.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1080.855 ; gain = 436.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1080.855 ; gain = 436.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1080.855 ; gain = 436.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1080.855 ; gain = 436.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1080.855 ; gain = 436.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |sum              |         2|
+|2     |float_tf         |         4|
+|3     |floating_mult    |         5|
+|4     |floating_div     |         1|
+|5     |floating_add     |         2|
+|6     |floating_point_0 |         1|
+|7     |ila_0            |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |float_tf         |     1|
+|2     |float_tf__4      |     1|
+|3     |float_tf__5      |     1|
+|4     |float_tf__6      |     1|
+|5     |floating_add     |     1|
+|6     |floating_add__2  |     1|
+|7     |floating_div     |     1|
+|8     |floating_mult    |     1|
+|9     |floating_mult__5 |     1|
+|10    |floating_mult__6 |     1|
+|11    |floating_mult__7 |     1|
+|12    |floating_mult__8 |     1|
+|13    |floating_point_0 |     1|
+|14    |ila_0            |     1|
+|15    |sum              |     1|
+|16    |sum__2           |     1|
+|17    |BUFG             |     2|
+|18    |CARRY4           |   184|
+|19    |LUT1             |    29|
+|20    |LUT2             |   193|
+|21    |LUT3             |   257|
+|22    |LUT4             |   286|
+|23    |LUT5             |   148|
+|24    |LUT6             |   385|
+|25    |FDCE             |   305|
+|26    |FDPE             |    42|
+|27    |FDRE             |     1|
+|28    |IBUF             |     3|
+|29    |IOBUF            |     1|
+|30    |OBUF             |     9|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+-----------------+----------------+------+
+|      |Instance         |Module          |Cells |
++------+-----------------+----------------+------+
+|1     |top              |                |  2363|
+|2     |  nolabel_line56 |max30102_driver |   202|
+|3     |  u_iic_phy      |iic_phy         |   300|
+|4     |  xxana_show     |ana_show        |  1740|
++------+-----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1080.855 ; gain = 436.496
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1080.855 ; gain = 336.547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1080.855 ; gain = 436.496
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1080.855 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 185 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1080.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1080.855 ; gain = 725.582
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1080.855 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/vivado2/max30102x3/prj/prj.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  6 21:12:57 2026...

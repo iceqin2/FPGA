@@ -1,0 +1,49 @@
+$date
+        2026-Jan-03 20:45:56
+$end
+$version
+        Vivado v2018.3 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 8 " nolabel_line51/next_state [7:0] $end
+$var reg 48 * nolabel_line51/iic_rd_dat_6B [47:0] $end
+$var reg 8 Z nolabel_line51/state [7:0] $end
+$var reg 1 b nolabel_line51/io_intr $end
+$var reg 24 c nolabel_line51/o_ir_dat [23:0] $end
+$var reg 24 { nolabel_line51/o_red_dat [23:0] $end
+$var reg 1 5" nolabel_line51/o_vld $end
+$var reg 8 6" nolabel_line51/INIT_X2 [7:0] $end
+$var reg 6 >" nolabel_line51/INIT_X1 [5:0] $end
+$var reg 1 D" _TRIGGER $end
+$var reg 1 E" _WINDOW $end
+$var reg 1 F" _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101000 "
+b111111111111111111111111 *
+b101000 Z
+0b
+b111111111111111111111111 c
+b0 {
+05"
+b0 6"
+b0 >"
+0D"
+1E"
+0F"
+$end
+#4096
+b11000 "
+15"
+1D"
+#4146
+b11001 "
+b11000 Z
+05"
+#4196
+b11001 Z

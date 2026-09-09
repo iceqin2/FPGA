@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ila_0_synth_1" LaunchDir="D:/vivado2/max30102x3/prj/prj.runs/ila_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="floating_point_0_synth_1" LaunchDir="D:/vivado2/max30102x3/prj/prj.runs/floating_point_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="floating_div_synth_1" LaunchDir="D:/vivado2/max30102x3/prj/prj.runs/floating_div_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="floating_add_synth_1" LaunchDir="D:/vivado2/max30102x3/prj/prj.runs/floating_add_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="floating_mult_synth_1" LaunchDir="D:/vivado2/max30102x3/prj/prj.runs/floating_mult_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sum_synth_1" LaunchDir="D:/vivado2/max30102x3/prj/prj.runs/sum_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="float_tf_synth_1" LaunchDir="D:/vivado2/max30102x3/prj/prj.runs/float_tf_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/vivado2/max30102x3/prj/prj.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ila_0_synth_1"/>
+		<Parent Id="floating_point_0_synth_1"/>
+		<Parent Id="floating_div_synth_1"/>
+		<Parent Id="floating_add_synth_1"/>
+		<Parent Id="floating_mult_synth_1"/>
+		<Parent Id="sum_synth_1"/>
+		<Parent Id="float_tf_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/vivado2/max30102x3/prj/prj.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="ila_0_synth_1"/>
+		<Parent Id="floating_point_0_synth_1"/>
+		<Parent Id="floating_div_synth_1"/>
+		<Parent Id="floating_add_synth_1"/>
+		<Parent Id="floating_mult_synth_1"/>
+		<Parent Id="sum_synth_1"/>
+		<Parent Id="float_tf_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
