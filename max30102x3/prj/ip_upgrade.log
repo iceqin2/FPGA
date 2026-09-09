@@ -1,0 +1,709 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Jan  6 21:10:46 2026
+| Host         : pioneer running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sum'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of sum (xilinx.com:ip:fir_compiler:7.2) from (Rev. 11) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Jan  6 21:10:45 2026
+| Host         : pioneer running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mult_xx'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mult_xx (xilinx.com:ip:mult_gen:12.0) from (Rev. 14) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Jan  6 21:10:45 2026
+| Host         : pioneer running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_0 (xilinx.com:ip:ila:6.2) from (Rev. 8) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Jan  6 21:10:44 2026
+| Host         : pioneer running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_point_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of floating_point_0 (xilinx.com:ip:floating_point:7.1) from (Rev. 7) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Jan  6 21:10:42 2026
+| Host         : pioneer running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_mult'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of floating_mult (xilinx.com:ip:floating_point:7.1) from (Rev. 7) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Jan  6 21:10:41 2026
+| Host         : pioneer running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_div'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of floating_div (xilinx.com:ip:floating_point:7.1) from (Rev. 7) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Jan  6 21:10:39 2026
+| Host         : pioneer running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_add'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of floating_add (xilinx.com:ip:floating_point:7.1) from (Rev. 7) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Jan  6 21:10:38 2026
+| Host         : pioneer running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'float_tf'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of float_tf (xilinx.com:ip:floating_point:7.1) from (Rev. 7) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Jan  6 21:10:37 2026
+| Host         : pioneer running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'div'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of div (xilinx.com:ip:div_gen:5.1) from (Rev. 14) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 20:37:51 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sum'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of sum (xilinx.com:ip:fir_compiler:7.2 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 20:37:50 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mult_xx'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mult_xx (xilinx.com:ip:mult_gen:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 20:37:50 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_0 (xilinx.com:ip:ila:6.2 (Rev. 8)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 20:37:31 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_point_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of floating_point_0 (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 20:37:29 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_mult'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of floating_mult (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 20:37:28 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_div'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of floating_div (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 20:37:26 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_add'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of floating_add (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 20:37:24 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'float_tf'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of float_tf (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 20:37:22 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'div'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of div (xilinx.com:ip:div_gen:5.1 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 19:19:10 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sum'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of sum (xilinx.com:ip:fir_compiler:7.2 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 19:19:09 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mult_xx'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mult_xx (xilinx.com:ip:mult_gen:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 19:19:08 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_0 (xilinx.com:ip:ila:6.2 (Rev. 8)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 19:18:50 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_point_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of floating_point_0 (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 19:18:49 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_mult'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of floating_mult (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 19:18:46 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_div'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of floating_div (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 19:18:44 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_add'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of floating_add (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 19:18:43 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'float_tf'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of float_tf (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jan  6 19:18:41 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'div'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of div (xilinx.com:ip:div_gen:5.1 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Jan  5 22:42:08 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sum'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of sum (xilinx.com:ip:fir_compiler:7.2 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Jan  5 22:42:07 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_0 (xilinx.com:ip:ila:6.2 (Rev. 8)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Jan  5 22:41:47 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'div'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of div (xilinx.com:ip:div_gen:5.1 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jan  4 20:43:46 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sum'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of sum (xilinx.com:ip:fir_compiler:7.2 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jan  4 20:43:45 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_0 (xilinx.com:ip:ila:6.2 (Rev. 8)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jan  4 20:43:25 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'div'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of div (xilinx.com:ip:div_gen:5.1 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jan  3 14:01:58 2026
+| Host         : DESKTOP-V9T7E5S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_0 (xilinx.com:ip:ila:6.2 (Rev. 8)) to Vivado generation flows.
+

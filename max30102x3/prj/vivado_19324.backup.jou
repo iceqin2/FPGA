@@ -1,0 +1,402 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jan  6 19:14:35 2026
+# Process ID: 19324
+# Current directory: C:/Users/lish/Desktop/300/max30102x3/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17252 C:\Users\lish\Desktop\300\max30102x3\prj\prj.xpr
+# Log file: C:/Users/lish/Desktop/300/max30102x3/prj/vivado.log
+# Journal file: C:/Users/lish/Desktop/300/max30102x3/prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lish/Desktop/300/max30102x3/prj/prj.xpr
+update_compile_order -fileset sources_1
+set_property part xc7z020clg400-2 [current_project]
+report_ip_status -name ip_status 
+upgrade_ip -srcset div [get_ips  {div float_tf floating_add floating_div floating_mult floating_point_0 ila_0 mult_xx sum}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {div float_tf floating_add floating_div floating_mult floating_point_0 ila_0 mult_xx sum}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+generate_target all [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/ila_0/ila_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/ila_0/ila_0.xci]
+generate_target all [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_point_0/floating_point_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_point_0/floating_point_0.xci]
+generate_target all [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_add/floating_add.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_add/floating_add.xci]
+generate_target all [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_mult/floating_mult.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_mult/floating_mult.xci]
+generate_target all [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_div/floating_div.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_div/floating_div.xci]
+generate_target all [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/float_tf/float_tf.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/float_tf/float_tf.xci]
+generate_target all [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/sum/sum.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/sum/sum.xci]
+launch_runs ila_0_synth_1
+wait_on_run ila_0_synth_1
+launch_runs floating_point_0_synth_1
+wait_on_run floating_point_0_synth_1
+launch_runs floating_add_synth_1
+wait_on_run floating_add_synth_1
+launch_runs floating_mult_synth_1
+wait_on_run floating_mult_synth_1
+launch_runs floating_div_synth_1
+wait_on_run floating_div_synth_1
+launch_runs float_tf_synth_1
+wait_on_run float_tf_synth_1
+reset_run sum_synth_1
+launch_runs sum_synth_1
+wait_on_run sum_synth_1
+synth_design -rtl -name rtl_1
+report_ip_status -name ip_status 
+place_ports {o_dis_datx1[0]} L14
+place_ports {o_dis_datx1[1]} N15
+place_ports {o_dis_datx1[3]} K16
+place_ports {o_dis_datx1[2]} K17
+place_ports {o_dis_datx2[3]} H15
+place_ports {o_dis_datx2[2]} H16
+place_ports {o_dis_datx2[0]} G17
+save_constraints
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk_50m]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {o_dis_datx1[3]} {o_dis_datx1[2]} {o_dis_datx1[1]} {o_dis_datx1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {o_dis_datx2[3]} {o_dis_datx2[2]} {o_dis_datx2[1]} {o_dis_datx2[0]}]]
+save_constraints
+set_property IOSTANDARD LVCMOS33 [get_ports [list io_intr]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list scl]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sda]]
+save_constraints
+place_ports sda L15
+place_ports scl N16
+place_ports io_intr J16
+save_constraints
+place_ports clk_50m U18
+place_ports rst_n M15
+place_ports {o_dis_datx1[3]} L14
+place_ports {o_dis_datx1[2]} N15
+place_ports {o_dis_datx1[1]} K16
+place_ports {o_dis_datx1[0]} K17
+place_ports {o_dis_datx2[3]} H15
+place_ports {o_dis_datx2[2]} H16
+place_ports {o_dis_datx2[1]} G17
+place_ports {o_dis_datx2[0]} J20
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+refresh_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lish/Desktop/300/max30102x3/prj/prj.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/lish/Desktop/300/max30102x3/prj/prj.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/lish/Desktop/300/max30102x3/prj/prj.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/lish/Desktop/300/max30102x3/prj/prj.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/lish/Desktop/300/max30102x3/prj/prj.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/lish/Desktop/300/max30102x3/prj/prj.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {xxana_show/o_int_dat} {xxana_show/o_int_vld} {xxana_show/of_ANS_dat} {xxana_show/of_ANS_vld} }
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes xxana_show/o_int_vld -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+startgroup 
+set_property CONTROL.DATA_DEPTH 8 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+set_property CONTROL.TRIGGER_POSITION 7 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+set_property CONTROL.WINDOW_COUNT 128 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+endgroup
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {o_ir_dat} {o_red_dat} {o_vld} }
+startgroup 
+set_property CONTROL.DATA_DEPTH 8 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+set_property CONTROL.TRIGGER_POSITION 7 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+set_property CONTROL.WINDOW_COUNT 128 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+endgroup
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes o_vld -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes o_vld -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+write_hw_ila_data -csv_file {C:\Users\lish\Desktop\300\max30102\prj\prj.srcs\sources_1\new\iladata.csv} hw_ila_data_2
+write_hw_ila_data -csv_file {C:\Users\lish\Desktop\300\.ila.csv} hw_ila_data_2
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+write_hw_ila_data -csv_file {C:\Users\lish\Desktop\300\iladata.csv} hw_ila_data_2
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+write_hw_ila_data -csv_file -force {C:\Users\lish\Desktop\300\iladata.csv} hw_ila_data_2
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+write_hw_ila_data -csv_file -force {C:\Users\lish\Desktop\300\iladata.csv} hw_ila_data_2
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+write_hw_ila_data -csv_file -force {C:\Users\lish\Desktop\300\iladata.csv} hw_ila_data_2
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+write_hw_ila_data -csv_file -force {C:\Users\lish\Desktop\300\iladata.csv} hw_ila_data_2
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+write_hw_ila_data -csv_file -force {C:\Users\lish\Desktop\300\iladata.csv} hw_ila_data_2
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+write_hw_ila_data -csv_file -force {C:\Users\lish\Desktop\300\iladata.csv} hw_ila_data_2
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+set_property PROBES.FILE {C:/Users/lish/Desktop/300/max30102x3/prj/prj.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/lish/Desktop/300/max30102x3/prj/prj.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/lish/Desktop/300/max30102x3/prj/prj.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {xxana_show/aver_ir_dat} {xxana_show/aver_red_dat} }
+add_wave -into {hw_ila_data_1.wcfg} -radix unsigned { {xxana_show/ir_derta_dat} {xxana_show/red_derta_dat} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+set_property part xc7a75tfgg484-2 [current_project]
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {div float_tf floating_add floating_div floating_mult floating_point_0 ila_0 mult_xx sum}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {div float_tf floating_add floating_div floating_mult floating_point_0 ila_0 mult_xx sum}] -no_script -sync -force -quiet
+generate_target all [get_files  {C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/div/div.xci C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/float_tf/float_tf.xci C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_add/floating_add.xci C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_div/floating_div.xci C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_mult/floating_mult.xci C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_point_0/floating_point_0.xci C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/ila_0/ila_0.xci C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/mult_xx/mult_xx.xci C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/sum/sum.xci}]
+catch { config_ip_cache -export [get_ips -all div] }
+catch { config_ip_cache -export [get_ips -all float_tf] }
+catch { config_ip_cache -export [get_ips -all floating_add] }
+catch { config_ip_cache -export [get_ips -all floating_div] }
+catch { config_ip_cache -export [get_ips -all floating_mult] }
+catch { config_ip_cache -export [get_ips -all floating_point_0] }
+catch { config_ip_cache -export [get_ips -all ila_0] }
+catch { config_ip_cache -export [get_ips -all mult_xx] }
+catch { config_ip_cache -export [get_ips -all sum] }
+export_ip_user_files -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/div/div.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/float_tf/float_tf.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_add/floating_add.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_div/floating_div.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_mult/floating_mult.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_point_0/floating_point_0.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/mult_xx/mult_xx.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/sum/sum.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/div/div.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/float_tf/float_tf.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_add/floating_add.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_div/floating_div.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_mult/floating_mult.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_point_0/floating_point_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/ila_0/ila_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/mult_xx/mult_xx.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/sum/sum.xci]
+export_simulation -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/div/div.xci] -directory C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files -ipstatic_source_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/modelsim} {questa=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/questa} {riviera=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/riviera} {activehdl=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/float_tf/float_tf.xci] -directory C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files -ipstatic_source_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/modelsim} {questa=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/questa} {riviera=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/riviera} {activehdl=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_add/floating_add.xci] -directory C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files -ipstatic_source_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/modelsim} {questa=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/questa} {riviera=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/riviera} {activehdl=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_div/floating_div.xci] -directory C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files -ipstatic_source_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/modelsim} {questa=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/questa} {riviera=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/riviera} {activehdl=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_mult/floating_mult.xci] -directory C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files -ipstatic_source_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/modelsim} {questa=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/questa} {riviera=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/riviera} {activehdl=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/floating_point_0/floating_point_0.xci] -directory C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files -ipstatic_source_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/modelsim} {questa=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/questa} {riviera=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/riviera} {activehdl=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/ila_0/ila_0.xci] -directory C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files -ipstatic_source_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/modelsim} {questa=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/questa} {riviera=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/riviera} {activehdl=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/mult_xx/mult_xx.xci] -directory C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files -ipstatic_source_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/modelsim} {questa=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/questa} {riviera=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/riviera} {activehdl=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/lish/Desktop/300/max30102x3/prj/prj.srcs/sources_1/ip/sum/sum.xci] -directory C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files -ipstatic_source_dir C:/Users/lish/Desktop/300/max30102x3/prj/prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/modelsim} {questa=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/questa} {riviera=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/riviera} {activehdl=C:/Users/lish/Desktop/300/max30102x3/prj/prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1

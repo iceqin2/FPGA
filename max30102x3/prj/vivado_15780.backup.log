@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Jan  6 21:19:52 2026
+# Process ID: 15780
+# Current directory: D:/vivado2/max30102x3/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4204 D:\vivado2\max30102x3\prj\prj.xpr
+# Log file: D:/vivado2/max30102x3/prj/vivado.log
+# Journal file: D:/vivado2/max30102x3/prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado2/max30102x3/prj/prj.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1121.578 ; gain = 14.574
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/vivado2/max30102x3/prj/prj.runs/impl_1/top.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {D:/vivado2/max30102x3/prj/prj.runs/impl_1/top.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {D:/vivado2/max30102x3/prj/prj.runs/impl_1/top.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"xxana_show/your_instance_name"}]]
+set_property PROBES.FILE {D:/vivado2/max30102x3/prj/prj.runs/impl_1/top.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {D:/vivado2/max30102x3/prj/prj.runs/impl_1/top.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {D:/vivado2/max30102x3/prj/prj.runs/impl_1/top.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+save_wave_config {D:/vivado2/max30102x3/prj/prj.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  6 21:21:33 2026...
